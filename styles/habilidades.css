@@ -1,0 +1,70 @@
+#habilidades {
+    height: auto;
+    padding: 1rem;
+    margin: 0;
+}
+
+.habilidades-container {
+    border-radius: 1rem;
+    margin: 0 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.accordion {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.accordion-header span {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.accordion-body {
+    color: #444;
+    font-size: 14px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 5px 0px;
+}
+
+.arrow {
+    transition: transform .2s linear;
+}
+
+.accordion:has(.active) .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-titulo {
+    display: flex;
+    justify-content: space-between;
+}
