@@ -2,6 +2,7 @@
     height: auto;
     padding: 1rem;
     margin: 0;
+    background-color: #1f1f1f;
 }
 
 .habilidades-container {
@@ -13,6 +14,14 @@
     row-gap: 1rem;
 }
 
+.habilidades-container h2 {
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    color: #f5f5f5;
+    margin-bottom: 1rem;
+}
+
 .accordion {
     width: 100%;
     background-color: #f5f5f5;
@@ -20,6 +29,7 @@
     cursor: pointer;
     padding: 12px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    align-self: center;
 }
 
 .accordion-header {
@@ -29,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 1.2rem;
     cursor: pointer;
 
 }
@@ -39,6 +49,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: "Poppins", sans-serif;
 }
 
 .accordion-body {
@@ -64,7 +75,89 @@
     transform: rotate(180deg);
 }
 
-.accordion-titulo {
-    display: flex;
-    justify-content: space-between;
+.skills-wrapper {
+    padding: 0 20px;
+}
+
+.skills-wrapper .bar {
+    margin: 20px 0;
+}
+
+.skills-wrapper .bar .info {
+    margin-bottom: 10px;
+}
+
+.skills-wrapper .bar .info {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills-wrapper .bar .progress-bar span {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.barra-html {
+    background-color: #ec6433;
+    width: 95%;
+}
+
+.barra-css {
+    background-color: #29b7e5;
+    width: 90%;
+}
+
+.barra-javascript {
+    background-color: #f5ce35;
+    width: 65%;
+}
+
+.barra-bootstrap {
+    background-color: #7611f7;
+    width: 50%;
+}
+
+.barra-sass {
+    background-color: #cd6799;
+    width: 75%;
+}
+
+.barra-tailwind {
+    background-color: #38bdf8;
+    width: 75%;
+}
+
+.barra-reactjs {
+    background-color: #61dafb;
+    width: 30%;
+}
+
+.barra-java {
+    background-color: #0d89c6;
+    width: 25%;
+}
+
+.barra-python {
+    background-color: #ffde56;
+    width: 20%;
+}
+
+.barra-sql {
+    background-color: #db7533;
+    width: 80%;
+}
+
+.barra-kotlin {
+    background-color: #814feb;
+    width: 25%;
 }
